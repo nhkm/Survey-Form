@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body>
+
+	<h1 id="title">Survey Form</h1>
+
+	<form id="survey-form" action="*.php" method="post">
+
+		<p id="description">Let us know how we can improve ErkinCodeCamp</p>
+
+		<div class="left">
+			<label id="name-label">*Name:</label>
+		</div>
+		<div class="right">
+			<input type="text" name="name-label" id="name" placeholder="Enter your name" required>
+		</div>
+		<br>
+		<div class="left">
+			<label id="email-label">*Email:</label>
+		</div>
+		<div class="right">
+			<input type="email" name="email-label" id="email" placeholder="Enter your Email" required>
+		</div>
+		<br>
+
+		<div class="left">
+			<label id="number-label">*Age:</label>
+		</div>
+		<div class="right">
+			<input type="number" name="number-label" min="7" max="70" id="number" placeholder="Age" required>
+		</div>
+		<br>
+
+		<div class="left">
+			<label>Which option best describes your current role?</label>
+		</div>
+		<div class="right">
+			<select id="dropdown">
+				<option selected disabled>Select an option</option>
+				<option>Student</option>
+				<option>Full Time Job</option>
+				<option>Full Time Learner</option>
+				<option>Other</option>
+			</select>
+		</div>
+		<br>
+
+		<div class="left">
+			<label id="name" >*How likely is that you would recommend ErkinCodeCamp to a friend?</label>
+		</div>
+		<div class="right">
+			<input type="radio" name="radiobutton" id="name" value="1">Definitely<br>
+			<input type="radio" name="radiobutton" id="name" value="2">Maybe<br>
+			<input type="radio" name="radiobutton" id="name" value="3">Not sure<br>
+		</div>
+
+		<div class="left">
+			<label>What do you like most in FCC</label>
+		</div>
+		<div class="right">
+			<select id="dropdown">
+				<option selected disabled>Select an option</option>
+				<option>Challenges</option>
+				<option>Projects</option>
+				<option>Community</option>
+				<option>Open Source</option>
+			</select>
+		</div>
+		<br>
+
+		<div class="left">
+			<label>Things that should be improved in the future (Check all that apply):</label>
+		</div>
+		<div class="right">
+			<input type="checkbox" name="box1" value="frontend">Front-end Projects <br>
+			<input type="checkbox" name="box2" value="backend">Back-end Projects <br>
+			<input type="checkbox" name="box3" value="datavis">Data Visualization <br>
+			<input type="checkbox" name="box4" value="challenge">Challenges <br>
+			<input type="checkbox" name="box5" value="opensource">Open Source Community <br>
+			<input type="checkbox" name="box6" value="gitter">Gitter help rooms <br>
+			<input type="checkbox" name="box7" value="video">Videos <br>
+			<input type="checkbox" name="box8" value="meetup">City Meetups <br>
+			<input type="checkbox" name="box9" value="wiki">Wiki <br>
+			<input type="checkbox" name="box10" value="forum">Forum <br>
+			<input type="checkbox" name="box11" value="course">Additional Courses <br>
+		</div>
+
+		<div class="left">
+			<label>Any Comments or Suggestions?</label>
+		</div>
+		<div class="right">
+			<textarea placeholder="Enter your comments here.."></textarea>
+		</div>
+		<br>
+
+
+		<button id="submit">Submit</button>
+		<br>
+
+		
+	</form>
+
+</body>
+</html>
